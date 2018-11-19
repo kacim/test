@@ -1,0 +1,377 @@
+/* line 1, ../sass/nomReset.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+
+/* line 8, ../sass/nomReset.scss */
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+/* line 30, ../sass/nomReset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 37, ../sass/nomReset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* line 41, ../sass/nomReset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 46, ../sass/nomReset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 51, ../sass/nomReset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 55, ../sass/nomReset.scss */
+a {
+  background: transparent;
+  text-decoration: none;
+  color: #08c;
+}
+
+/* line 61, ../sass/nomReset.scss */
+a:active {
+  outline: 0;
+}
+
+/* line 65, ../sass/nomReset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 70, ../sass/nomReset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 74, ../sass/nomReset.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 78, ../sass/nomReset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 83, ../sass/nomReset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 88, ../sass/nomReset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 95, ../sass/nomReset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 99, ../sass/nomReset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 103, ../sass/nomReset.scss */
+img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+/* line 109, ../sass/nomReset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 113, ../sass/nomReset.scss */
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 123, ../sass/nomReset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 132, ../sass/nomReset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* line 141, ../sass/nomReset.scss */
+button,
+input,
+select {
+  overflow: visible;
+}
+
+/* line 146, ../sass/nomReset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 153, ../sass/nomReset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 158, ../sass/nomReset.scss */
+[disabled] {
+  cursor: default;
+}
+
+/* line 163, ../sass/nomReset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 168, ../sass/nomReset.scss */
+input {
+  line-height: normal;
+}
+
+/* line 173, ../sass/nomReset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 179, ../sass/nomReset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 183, ../sass/nomReset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+/* line 189, ../sass/nomReset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 193, ../sass/nomReset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 199, ../sass/nomReset.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 204, ../sass/nomReset.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+/* line 210, ../sass/nomReset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 216, ../sass/nomReset.scss */
+input,
+select,
+textarea {
+  outline: 0;
+}
+
+/* line 221, ../sass/nomReset.scss */
+textarea,
+input {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+/* line 226, ../sass/nomReset.scss */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+/* line 231, ../sass/nomReset.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999;
+}
+
+/* line 236, ../sass/nomReset.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+/* line 241, ../sass/nomReset.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 245, ../sass/nomReset.scss */
+.placeholder {
+  color: #999;
+}
+
+/* line 249, ../sass/nomReset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 255, ../sass/nomReset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 268, ../sass/nomReset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+  margin: 0;
+}
+
+/* line 276, ../sass/nomReset.scss */
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 282, ../sass/nomReset.scss */
+ul,
+ol {
+  list-style: none outside none;
+}
+
+/* line 288, ../sass/nomReset.scss */
+h1,
+h2,
+h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+
+/* line 293, ../sass/nomReset.scss */
+h1 {
+  font-size: 18px;
+}
+
+/* line 297, ../sass/nomReset.scss */
+h2 {
+  font-size: 16px;
+}
+
+/* line 301, ../sass/nomReset.scss */
+h3 {
+  font-size: 14px;
+}
+
+/* line 305, ../sass/nomReset.scss */
+i {
+  font-style: normal;
+}
+
+/* line 309, ../sass/nomReset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 314, ../sass/nomReset.scss */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+/* line 319, ../sass/nomReset.scss */
+.clearfix::after {
+  clear: both;
+}

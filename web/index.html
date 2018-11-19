@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>迪思传媒</title>
+  
+    <script type="text/javascript" src="lib/jquery/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="lib/jqueryui/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+    <script type="text/javascript" src='lib/echarts/echarts4.js'></script>
+    <script type="text/javascript" src="lib/echarts/echarts-wordcloud.js"></script>
+    <script type="text/javascript" src="lib/echarts/echarts-liquidfill.js"></script>
+
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="tooltip-success-show"></div>
+        <div class='banner'>
+               <div class="logoC">
+               	     <img src='images/logo.png' class='logo'>
+               	     <div>Auto PR-Viewer</div>
+               </div>
+            
+        </div>
+            <div class='menuPage'>
+                <ul>
+                    <li class="typeLi showInfo" data-content='1'>
+                        <div class="typeTitle openColor">销量</div>
+                    </li>
+                    <li class="typeLi hasInfo noOpen">
+                        <div class="typeTitle">传播</div>
+                        <ul class="typeItem">
+                            <li class="showInfoLi" data-content='2'>传播总量</li>
+                            <li class="showInfoLi" data-content='3'>传播形式</li>
+                            <li class="showInfoLi" data-content='4'>传播内容</li>
+                            <li class="showInfoLi" data-content='5'>传播效果</li>
+                        </ul>
+                    </li>
+                    <li class="typeLi showInfo" data-content='6'>
+                        <div class="typeTitle">论坛</div>
+                    </li>
+                    <li class="typeLi showInfo" data-content='7'>
+                        <div class="typeTitle">舆情</div>
+                    </li>
+                    <li class="typeLi showInfo" data-content='8'>
+                        <div class="typeTitle">用户</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="center">
+
+            	          <div class='topValue'>
+				                <div class='nomalItem' id="typeSelect" style="margin-right: 30px">
+				                	   <div class="titleWord">分析维度:</div>
+						               <div class="selectItem">
+						                     <div class="selectValue" id="tb">车型</div>
+						                     <ul class="setSelect carSelect">
+						                     	   <li data-content="车型">车型</li>
+						                     	   <li data-content="品牌">品牌</li>
+						                     </ul>
+						               </div> 
+						         </div>      
+
+				               <div class="addMore">添加竞品 +</div>  
+
+                               <div class="search">查询</div>   
+				               
+				               <div class="setAddContent" id="setAddContent">
+				               </div>
+				          </div> 
+
+				          <div class="dataValue">
+                               
+                             <div class='nomalItem'>
+				                	   <div class="titleWord">时间范围:</div>
+						               <div class="selectItem">
+						                     <div class="selectValue" id="timeVal" data-content='days'>日</div>
+						                     <ul class="setSelect timeSelect">
+						                     	   <li data-content="days">日</li>
+						                     	   <li data-content="week">周</li>
+						                     	   <li data-content="months">月</li>
+						                     </ul>
+						               </div> 
+						       </div>  
+
+						       <div class='nomalItem' id="startItem">
+				                	   <div class="titleWord">开始时间:</div>
+				                	   <div class="setTime date input-group startTime" id="startTime">
+                                            <input class="form-control" id="startTimeVal"   readonly>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                                       </div>
+						              <!--  <div class="showData" id="startData"></div> -->
+						       </div>  
+
+						       <div class='nomalItem' id="endItem">
+				                	   <div class="titleWord">结束时间:</div>
+                                       <div class="setTime date input-group endTime" id="endTime">
+                                            <input class="form-control" id="endTimeVal"   readonly>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                                       </div>
+				                	  <!--  <div class="setTime" id="endTime" readonly="readonly"></div> -->
+						              <!--  <div class="showData" id="endData"></div> -->
+						       </div>  
+
+		          </div> 
+
+				          
+				          <div class="setInfo" id="setInfo" >
+                                <div id='main' class="nomalChart two" style="height:200px"></div>
+				          </div>   
+
+
+            </div>
+        </div>
+</body>
+
+
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link href="lib/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/juicer.js"></script>
+<script type="text/javascript" src="js/charts/options.js"></script>
+<script type="text/javascript" src="js/charts/china.js"></script>
+<script type="text/javascript" src="js/charts/sales.js"></script>
+<script type="text/javascript" src="js/charts/amountTotal.js"></script>
+<script type="text/javascript" src="js/charts/amountModel.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>
+
+

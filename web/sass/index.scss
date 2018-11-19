@@ -1,0 +1,517 @@
+@import "common";
+@import "datapicker";
+
+$bfont:24px;
+$nfont:20px;
+$sfont:16px;
+$ssfont:14px;
+
+body {
+    background: black;
+    font-size: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 48, 112, 0.7);
+}
+
+.logoC{
+
+   width: 220px;
+   position: relative;
+   line-height: 90px;
+   text-align: center;
+
+   div{
+    font-size: $nfont;
+    color:white;
+    display: inline-block;
+    vertical-align: middle;
+   }
+}
+
+.logo {
+    width: 40px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+.menuPage {
+
+    background: rgba(0, 48, 112, 0.7);
+    width: 220px;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    border-top:1px solid white;
+    border-right: 1px solid white;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .openColor {
+        background: lighten(#093d5e, 10%) !important;
+    }
+
+
+    .typeLi {
+        border-bottom: 1px solid white;
+
+        .typeTitle {
+            background: transparent;
+            min-height: 50px;
+            width: 100%;
+            font-size: $nfont;
+            text-align: center;
+            line-height: 50px;
+
+            &:hover {
+                cursor: pointer;
+                background:rgba(0, 48, 112, 0.5);
+               // background: lighten(#093d5e, 10%);
+            }
+        }
+    }
+
+    .checkColor {
+        background: lighten(#081d33, 10%) !important;
+    }
+
+    .typeItem {
+
+        display: none;
+
+        li {
+            background: #081d33;
+            color: #b0bfce;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: $nfont;
+
+            &:hover {
+                cursor: pointer;
+                background: lighten(#081d33, 10%);
+            }
+
+        }
+
+    }
+
+}
+
+
+.center {
+    height: calc(100% - 90px);
+    width: calc(100% - 222px);
+    min-width: calc(960px - 222px);
+    background: #f0f2f5;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow-y: auto;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+.nomalItem {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 15px 0px 15px;
+    position: relative;
+}
+
+//常规选择器
+
+
+.titleWord {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    color: #666;
+    width: 80px;
+    font-size: $sfont;
+}
+
+.selectItem {
+
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    position: relative;
+
+    .selectValue {
+        width: 100%;
+        height: 30px;
+        position: relative;
+        border: solid 1px #bfbfbf;
+        border-radius: 3px;
+        font-size: $ssfont;
+        color: #333;
+        line-height: 30px;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .setSelect {
+        width: 100%;
+        max-height: 300px;
+        overflow: auto;
+        position: absolute;
+        top: 35px;
+        border: 1px solid #e0e0e0;
+        display: none;
+        z-index: 5;
+        background:white;
+
+        li {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: top;
+            border-bottom: 1px solid #e0e0e0;
+            color: #666;
+            font-size: $nfont;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ebf0fb;
+            }
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+    }
+
+}
+
+
+
+//字母多选
+
+.carSelectItemAdd {
+    margin-left: 276px;
+}
+
+.carSelectItem {
+
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    .carSelectVal {
+        width: 200px;
+        height: 30px;
+        position: relative;
+        border: solid 1px #bfbfbf;
+        border-radius: 3px;
+        font-size: $ssfont;
+        color: #333;
+        line-height: 30px;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+}
+
+.checkIndex {
+
+    height: auto;
+    width: 28px;
+    background: #f8f8f8;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+
+
+    li {
+
+        width: 28px;
+        height: 20px;
+        text-align: center;
+        vertical-align: top;
+        color: 50px;
+        line-height: 20px;
+        font-size: $sfont;
+
+        &:hover {
+            cursor: pointer;
+            background: #386ed3;
+
+        }
+    }
+
+}
+
+.carSelect {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 350px;
+    display: none;
+    z-index: 5;
+
+}
+
+
+.listJump::-webkit-scrollbar {
+    display: none;
+}
+
+
+.listJump {
+    height: 100%;
+    width: 150px;
+    background: #f8f8f8;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    font-size: $sfont;
+    overflow-y: auto;
+    max-height: 460px;
+    border-left: 1px solid #e0e0e0;
+    cursor: pointer;
+    float: left;
+
+    dt {
+        color: #386ed3;
+        background-color: #ebf0fb;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    dd {
+        border-bottom: 1px solid #e0e0e0;
+
+        &:hover {
+            background-color: #ebf0fb;
+        }
+    }
+
+    dd::last-child {
+        border-bottom: none;
+    }
+
+    dt,
+    dd {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+
+.listDes {
+
+    height: auto;
+    width: 150px;
+    background: #f8f8f8;
+    display: none;
+    vertical-align: top;
+    font-size: $sfont;
+    overflow-y: auto;
+    max-height: 460px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    float: left;
+
+    .listDesUl {
+
+        li {
+            width: 100%;
+            height: 31px;
+            line-height: 31px;
+            text-align: center;
+            vertical-align: top;
+            border-bottom: 1px solid #e0e0e0;
+
+            &:hover {
+                background-color: #ebf0fb;
+            }
+        }
+
+        li::last-child {
+            border-bottom: none;
+        }
+
+    }
+
+
+}
+
+.setMoreItem {
+    width: 100%;
+    display: block !important;
+    margin-top: 10px;
+}
+
+
+.addMore,
+.delMore {
+    width: auto;
+    height: 30px;
+    position: relative;
+    font-size: $ssfont;
+    color: white;
+    line-height: 30px;
+    color: #666;
+    display: inline-block;
+    vertical-align: top;
+    left: 29px;
+    cursor: pointer;
+
+    &:hover {
+        color: #fe5453;
+    }
+}
+
+
+.search{
+
+    width: auto;
+    height: 30px;
+    padding-left:5px;
+    padding-right:5px;
+    position: relative;
+    font-size: $ssfont;
+    color: white;
+    line-height: 30px;
+    color: #666;
+    display: inline-block;
+    vertical-align: top;
+    left: 29px;
+    cursor: pointer;
+    border:1px solid #fe5453;
+    min-width: 100px;
+    text-align: center;
+    border-radius:10px;
+    background: #fe5453;
+    color:white;
+    margin-left: 12px;
+
+    &:hover {
+        background: darken(#fe5453,20%);
+    }
+
+}
+
+.dataValue {
+    margin-top: 15px;
+}
+
+.setTime {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    border: solid 1px #bfbfbf;
+    border-radius: 3px;
+    font-size: $ssfont;
+    color: #333;
+    line-height: 30px;
+    text-indent: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.showData {
+    width: 282px;
+    font-size: $nfont;
+    color: white;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 50px;
+
+}
+
+
+//图表
+
+.setInfo {
+   // text-align: center;
+}
+
+.opop{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 200px;
+
+}
+
+
+.chinaCss{
+    width: calc(100% - 20px);
+    height: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.nomalChart {
+
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.bMap{
+    height: 450px !important;
+}
+
+.one {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.two {
+
+    width: calc(100%/2 - 15px);
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.three {
+
+    width: calc(100%/3 - 16px);
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}

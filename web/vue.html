@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Accordion - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <script type="text/javascript" src="lib/vue/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <div v-for="item in arrays">{{item.name}}</div>
+    </div>
+</body>
+<script type="text/javascript">
+
+    new Vue({
+
+      el: '#app',
+
+      data: {
+
+        message: 'Hello Vue!',
+        arrays:[{ name: 'Runoob' },{ name: 'Google' },{ name: 'Taobao' }]
+      }
+    })
+
+</script>
+
+<style>
+
+     p,input,div{
+      font-size: 20px !important;
+      color:white;
+     }
+
+</style>
+
+
+</html>
