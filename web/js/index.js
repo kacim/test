@@ -114,13 +114,12 @@ function createPicker(id,type){
             }
 
              id.datetimepicker({
+             	     language:'cn',
                      format: format,
-                     language: 'cn',
-                     weekStart: 1,
                      autoclose: true,
                      startView: startView,
                      minView: minView,
-                     forceParse: false,
+                     forceParse: true,
                      startDate:startDate,
               });
             
@@ -287,7 +286,9 @@ function initNorSelect() {
 
             addStartTime();
             addEndTime();
+            $('.datetimepicker').remove();
             initTime();
+
             
         }
      
