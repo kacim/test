@@ -202,14 +202,17 @@ function initCarSelect() {
 
 
     $('.carSelectVal').off('click').on('click', function() {
-        initSelectEven()
+        
         if ($(this).hasClass('openSelect')) {
             $(this).removeClass('openSelect');
             $(this).parent().find('.carSelect').slideUp();
             $('div').removeClass('errorItem');
+            initSelectEven()
         } else {
+        	initSelectEven()
             $(this).addClass('openSelect');
             $(this).parent().find('.carSelect').slideDown();
+
         }
         event.stopPropagation();
     });
@@ -256,11 +259,14 @@ function initCarSelect() {
 function initNorSelect() {
 
     $('.selectValue').off('click').on('click', function() {
-        initSelectEven()
+       
+        
         if ($(this).hasClass('openSelect')) {
             $(this).removeClass('openSelect');
             $(this).parent().find('.setSelect').slideUp();
+            initSelectEven();
         } else {
+        	initSelectEven();
             $(this).addClass('openSelect');
             $(this).parent().find('.setSelect').slideDown();
         }
