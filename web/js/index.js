@@ -376,7 +376,7 @@ function test() {
             },
             data: [{
                     name: '迪思传媒',
-                    value: 10000,
+                    value: 9000,
                     textStyle: {
                         normal: {
                             color: 'black'
@@ -395,7 +395,7 @@ function test() {
                     value: 4386
                 },
                 {
-                    name: 'Macys',
+                    name: 'Ma',
                     value: 6181
                 },
                 {
@@ -476,6 +476,14 @@ function test() {
                 },
                 {
                     name: 'Point Break',
+                    value: 265
+                },
+                 {
+                    name: ' Break',
+                    value: 265
+                },
+                 {
+                    name: 'Point ',
                     value: 265
                 },
 
