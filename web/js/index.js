@@ -41,7 +41,7 @@ function initMenu() {
 
 
     $('.showInfo').off('click').on('click', function() {
-        $('.typeTitle').removeClass('openColor');
+        $('.typeTitle').removeClass('openColor').removeClass('hasInfoColor');
         $(this).find('.typeTitle').addClass('openColor');
         hasInfoInit();
         initCheckCharts($(this).attr('data-content'));
@@ -53,11 +53,11 @@ function initMenu() {
         if ($(this).hasClass('noOpen')) {
             $(this).find('.typeItem').slideDown();
             $(this).removeClass('noOpen').addClass('Open');
-            $(this).find('.typeTitle').addClass('openColor');
+            $(this).find('.typeTitle').addClass('hasInfoColor');
         } else {
             $(this).find('.typeItem').slideUp();
             $(this).removeClass('Open').addClass('noOpen');
-            $(this).find('.typeTitle').addClass('openColor');
+            $(this).find('.typeTitle').removeClass('hasInfoColor');
         }
 
         event.stopPropagation();
@@ -67,8 +67,8 @@ function initMenu() {
 
     $('.showInfoLi').off('click').on('click', function() {
         initCheckCharts($(this).attr('data-content'));
-        $('.typeTitle').removeClass('openColor');
-        $(this).parent().parent().find('.typeTitle').addClass('openColor');
+        $('.typeTitle').removeClass('openColor').removeClass('hasInfoColor');
+        $(this).parent().parent().find('.typeTitle').addClass('hasInfoColor');
         $('.showInfoLi').removeClass('checkColor');
         $(this).addClass('checkColor');
         $('.hasInfo').removeClass('Open').addClass('noOpen');

@@ -65,6 +65,7 @@ body {
 
     .fa{
         margin-right: 10px;
+        margin-left: 10px;
     }
 
     .fa-lg{
@@ -76,9 +77,23 @@ body {
         background: lighten(#093d5e, 10%) !important;
     }
 
+    
+    .hasInfo .typeTitle{
+        padding-left: 35px;
+    }
+
 
     .typeLi {
         border-bottom: 1px solid white;
+        
+        .hasInfoColor .upDown{
+            color:#fe5453;
+              transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+        }
 
         .openColor .fa{
             color:#fe5453;
