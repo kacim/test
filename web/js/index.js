@@ -30,9 +30,9 @@ function initPage() {
 function mainInit() {
 
     //options.js
+    //createCharts(className, classId, type)
     createCharts('two', 'yyy');
     createCharts('one', 'ttt', 'china');
-
 
 }
 
