@@ -62,6 +62,16 @@ body {
         cursor: pointer;
     }
 
+
+    .fa{
+        margin-right: 10px;
+    }
+
+    .fa-lg{
+        font-size: 18px;
+        line-height: 0px;
+    }
+
     .openColor {
         background: lighten(#093d5e, 10%) !important;
     }
@@ -69,6 +79,10 @@ body {
 
     .typeLi {
         border-bottom: 1px solid white;
+
+        .openColor .fa{
+            color:#fe5453;
+        }
 
         .typeTitle {
             background: transparent;

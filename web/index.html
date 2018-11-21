@@ -4,18 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Auto PR-Viewer</title>
-
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
-    
-    <script type="text/javascript" src="lib/jquery/jquery-2.0.3.js"></script>
-    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="lib/bootstrap/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
-    <script type="text/javascript" src='lib/echarts/echarts4.js'></script>
-    <script type="text/javascript" src="lib/echarts/echarts-wordcloud.js"></script>
-    <script type="text/javascript" src="lib/echarts/echarts-liquidfill.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="lib/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
@@ -31,10 +24,10 @@
             <div class='menuPage'>
                 <ul>
                     <li class="typeLi showInfo" data-content='1'>
-                        <div class="typeTitle openColor">销量</div>
+                        <div class="typeTitle openColor"><span class="fa fa-area-chart fa-lg"></span>销量</div>
                     </li>
                     <li class="typeLi hasInfo noOpen">
-                        <div class="typeTitle">传播</div>
+                        <div class="typeTitle"><span class="fa fa-bar-chart fa-lg"></span>传播</div>
                         <ul class="typeItem">
                             <li class="showInfoLi" data-content='2'>传播总量</li>
                             <li class="showInfoLi" data-content='3'>传播形式</li>
@@ -43,13 +36,13 @@
                         </ul>
                     </li>
                     <li class="typeLi showInfo" data-content='6'>
-                        <div class="typeTitle">论坛</div>
+                        <div class="typeTitle"><span class="fa fa-line-chart fa-lg"></span>论坛</div>
                     </li>
                     <li class="typeLi showInfo" data-content='7'>
-                        <div class="typeTitle">舆情</div>
+                        <div class="typeTitle"><span class="fa fa-pie-chart fa-lg"></span>舆情</div>
                     </li>
                     <li class="typeLi showInfo" data-content='8'>
-                        <div class="typeTitle">用户</div>
+                        <div class="typeTitle"><span class="fa fa-address-book fa-lg"></span>用户</div>
                     </li>
                 </ul>
             </div>
@@ -123,8 +116,16 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<link href="lib/bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+<!-- lib -->
+<script type="text/javascript" src="lib/jquery/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="lib/bootstrap/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript" src='lib/echarts/echarts4.js'></script>
+<script type="text/javascript" src="lib/echarts/echarts-wordcloud.js"></script>
+<script type="text/javascript" src="lib/echarts/echarts-liquidfill.js"></script>
+<!-- js -->
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/juicer.js"></script>
 <script type="text/javascript" src="js/charts/options.js"></script>
