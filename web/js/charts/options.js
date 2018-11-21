@@ -14,8 +14,6 @@ var modelCreate = {
 
 function showCharts(classId, type) {
 
-   
-
     let options = setMapLine();
     if (type != null && type != '' && type != undefined) {
         switch (type) {
@@ -833,11 +831,11 @@ option = {
         calculable: true,
         seriesIndex: [1],
         inRange: {
-             color: ['#3B5077', '#031525'] // 蓝黑
+            // color: ['#3B5077', '#031525'] // 蓝黑
             // color: ['#ffc0cb', '#800080'] // 红紫
             // color: ['#3C3B3F', '#605C3C'] // 黑绿
             // color: ['#0f0c29', '#302b63', '#24243e'] // 黑紫黑
-            // color: ['#23074d', '#cc5333'] // 紫红
+             color: ['#23074d', '#cc5333'] // 紫红
             // color: ['#00467F', '#A5CC82'] // 蓝绿
             // color: ['#1488CC', '#2B32B2'] // 浅蓝
             // color: ['#00467F', '#A5CC82'] // 蓝绿
@@ -872,7 +870,7 @@ option = {
                 show: false,
             }
         },
-        roam: true,
+        roam: false,//这里是放大缩小
         itemStyle: {
             normal: {
                 areaColor: '#031525',
