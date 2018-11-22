@@ -7,7 +7,10 @@ function createCharts(className, classId, type) {
 
 var modelCreate = {
     chart_Tpl: [
-        '<div class="nomalChart ${className}" id="${classId}"></div>'
+        '<div class="nomalChart ${className}">'+
+             '<div class="nomalTitle">这个是标题</div>'+
+             '<div class="chartsItem " id="${classId}"></div>'+
+        '</div>'
     ].join(""),
 }
 
