@@ -53,11 +53,11 @@ function initMenu() {
         if ($(this).hasClass('noOpen')) {
             $(this).find('.typeItem').slideDown();
             $(this).removeClass('noOpen').addClass('Open');
-            $(this).find('.typeTitle').addClass('hasInfoColor');
+       //     $(this).find('.typeTitle').addClass('hasInfoColor');
         } else {
             $(this).find('.typeItem').slideUp();
             $(this).removeClass('Open').addClass('noOpen');
-            $(this).find('.typeTitle').removeClass('hasInfoColor');
+       //     $(this).find('.typeTitle').removeClass('hasInfoColor');
         }
 
         event.stopPropagation();

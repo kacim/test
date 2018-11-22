@@ -1,5 +1,6 @@
 @import "common";
 @import "datapicker";
+@import "themeWhite";
 
 $bfont:24px;
 $nfont:20px;
@@ -17,19 +18,19 @@ body {
     background: rgba(0, 48, 112, 0.7);
 }
 
-.logoC{
+.logoC {
 
-   width: 220px;
-   position: relative;
-   line-height: 90px;
-   text-align: center;
+    width: 220px;
+    position: relative;
+    line-height: 90px;
+    text-align: center;
 
-   div{
-    font-size: $nfont;
-    color:white;
-    display: inline-block;
-    vertical-align: middle;
-   }
+    div {
+        font-size: $nfont;
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 .logo {
@@ -54,7 +55,7 @@ body {
     display: inline-block;
     vertical-align: top;
     color: white;
-    border-top:1px solid white;
+    border-top: 1px solid white;
     border-right: 1px solid white;
 
 
@@ -63,40 +64,40 @@ body {
     }
 
 
-    .fa{
+    .fa {
         margin-right: 10px;
         margin-left: 10px;
     }
 
-    .fa-lg{
+    .fa-lg {
         font-size: 18px;
         line-height: 0px;
     }
 
     .openColor {
-        background: lighten(#093d5e, 10%) !important;
+        background: lighten(#093d5e, 10%);
     }
 
-    
-    .hasInfo .typeTitle{
+
+    .hasInfo .typeTitle {
         padding-left: 35px;
     }
 
 
     .typeLi {
         border-bottom: 1px solid white;
-        
-        .hasInfoColor .upDown{
-            color:#fe5453;
-              transform: rotate(180deg);
+
+        .hasInfoColor .upDown {
+            color: #fe5453;
+            transform: rotate(180deg);
             -webkit-transform: rotate(180deg);
             -moz-transform: rotate(180deg);
             -o-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
         }
 
-        .openColor .fa{
-            color:#fe5453;
+        .openColor .fa {
+            color: #fe5453;
         }
 
         .typeTitle {
@@ -109,14 +110,14 @@ body {
 
             &:hover {
                 cursor: pointer;
-                background:rgba(0, 48, 112, 0.5);
-               // background: lighten(#093d5e, 10%);
+                background: rgba(0, 48, 112, 0.5);
+                // background: lighten(#093d5e, 10%);
             }
         }
     }
 
     .checkColor {
-        background: lighten(#081d33, 10%) !important;
+        background: lighten(#081d33, 10%);
     }
 
     .typeItem {
@@ -147,7 +148,8 @@ body {
     height: calc(100% - 90px);
     width: calc(100% - 222px);
     min-width: calc(960px - 222px);
-    background: #f0f2f5;
+    //background: #f0f2f5;
+    background: white;
     display: inline-block;
     position: relative;
     vertical-align: top;
@@ -212,7 +214,7 @@ body {
         border: 1px solid #e0e0e0;
         display: none;
         z-index: 5;
-        background:white;
+        background: white;
 
         li {
             width: 100%;
@@ -423,12 +425,12 @@ body {
 }
 
 
-.search{
+.search {
 
     width: auto;
     height: 30px;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left: 5px;
+    padding-right: 5px;
     position: relative;
     font-size: $ssfont;
     color: white;
@@ -438,16 +440,16 @@ body {
     vertical-align: top;
     left: 29px;
     cursor: pointer;
-    border:1px solid #fe5453;
+    border: 1px solid #fe5453;
     min-width: 100px;
     text-align: center;
-    border-radius:10px;
+    border-radius: 10px;
     background: #fe5453;
-    color:white;
+    color: white;
     margin-left: 12px;
 
     &:hover {
-        background: darken(#fe5453,20%);
+        background: darken(#fe5453, 20%);
     }
 
 }
@@ -487,10 +489,10 @@ body {
 //图表
 
 .setInfo {
-   // text-align: center;
+    // text-align: center;
 }
 
-.opop{
+.opop {
     width: calc(100% - 20px);
     margin-left: 10px;
     margin-top: 10px;
@@ -499,7 +501,7 @@ body {
 }
 
 
-.chinaCss{
+.chinaCss {
     width: calc(100% - 20px);
     height: 500px;
     margin-left: 10px;
@@ -507,15 +509,21 @@ body {
 }
 
 .nomalChart {
-
     display: inline-block;
     vertical-align: top;
-    border: 1px solid #ccc;
+    background:white;
+    border: 20px solid #ccc;
     border-radius: 10px;
+
+    -webkit-border-image: url(../images/123.jpg) 100% round;
+    /* Safari 5 */
+    -o-border-image: url(../images/123.jpg) 30 30 round;
+    /* Opera */
+    border-image: url(../images/456.jpg) 30 30 round;
 
 }
 
-.bMap{
+.bMap {
     height: 450px !important;
 }
 
