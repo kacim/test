@@ -895,66 +895,28 @@ a {
   color: #333;
 }
 
-/* line 1, ../sass/_themeWhite.scss */
-.menuPage {
-  background: white !important;
-  color: #666 !important;
-}
-/* line 6, ../sass/_themeWhite.scss */
-.menuPage .typeTitle:hover {
-  background: #f5f5f5 !important;
-}
-/* line 11, ../sass/_themeWhite.scss */
-.menuPage .openColor, .menuPage .hasInfoColor {
-  color: #447ed9 !important;
-  background: none;
-}
-/* line 15, ../sass/_themeWhite.scss */
-.menuPage .openColor .fa, .menuPage .hasInfoColor .fa {
-  color: #447ed9 !important;
-}
-/* line 20, ../sass/_themeWhite.scss */
-.menuPage .showInfoLi {
-  background: transparent !important;
-  color: #666 !important;
-}
-/* line 23, ../sass/_themeWhite.scss */
-.menuPage .showInfoLi:hover {
-  background: #f5f5f5 !important;
-}
-/* line 27, ../sass/_themeWhite.scss */
-.menuPage .checkColor {
-  background: #f5f5f5 !important;
-  color: #447ed9 !important;
-}
-
-/* line 33, ../sass/_themeWhite.scss */
-.center {
-  background: #f1f1f1 !important;
-}
-
-/* line 10, ../sass/index.scss */
+/* line 9, ../sass/index.scss */
 body {
   font-size: 0;
   background: url(../images/bg.jpg) no-repeat left top;
   background-size: 100%;
 }
 
-/* line 17, ../sass/index.scss */
+/* line 16, ../sass/index.scss */
 .banner {
   width: 100%;
-  height: 90px;
+  height: 60px;
   background: rgba(0, 48, 112, 0.7);
 }
 
-/* line 23, ../sass/index.scss */
+/* line 22, ../sass/index.scss */
 .logoC {
   width: 220px;
   position: relative;
-  line-height: 90px;
+  line-height: 60px;
   text-align: center;
 }
-/* line 30, ../sass/index.scss */
+/* line 29, ../sass/index.scss */
 .logoC div {
   font-size: 20px;
   color: white;
@@ -962,7 +924,7 @@ body {
   vertical-align: middle;
 }
 
-/* line 38, ../sass/index.scss */
+/* line 37, ../sass/index.scss */
 .logo {
   width: 40px;
   position: relative;
@@ -973,11 +935,11 @@ body {
   margin-right: 10px;
 }
 
-/* line 50, ../sass/index.scss */
+/* line 49, ../sass/index.scss */
 .menuPage {
   background: rgba(0, 48, 112, 0.7);
   width: 220px;
-  height: calc(100% - 90px);
+  height: calc(100% - 60px);
   overflow-y: auto;
   position: relative;
   display: inline-block;
@@ -986,33 +948,33 @@ body {
   border-top: 1px solid white;
   border-right: 1px solid white;
 }
-/* line 64, ../sass/index.scss */
+/* line 63, ../sass/index.scss */
 .menuPage:hover {
   cursor: pointer;
 }
-/* line 69, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 .menuPage .fa {
   margin-right: 10px;
   margin-left: 10px;
 }
-/* line 74, ../sass/index.scss */
+/* line 73, ../sass/index.scss */
 .menuPage .fa-lg {
   font-size: 18px;
   line-height: 0px;
 }
-/* line 79, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 .menuPage .openColor {
   background: #0d5b8d;
 }
-/* line 84, ../sass/index.scss */
+/* line 83, ../sass/index.scss */
 .menuPage .hasInfo .typeTitle {
   padding-left: 35px;
 }
-/* line 89, ../sass/index.scss */
+/* line 88, ../sass/index.scss */
 .menuPage .typeLi {
   border-bottom: 1px solid white;
 }
-/* line 92, ../sass/index.scss */
+/* line 91, ../sass/index.scss */
 .menuPage .typeLi .hasInfoColor .upDown {
   color: #fe5453;
   transform: rotate(180deg);
@@ -1021,11 +983,11 @@ body {
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
-/* line 101, ../sass/index.scss */
+/* line 100, ../sass/index.scss */
 .menuPage .typeLi .openColor .fa {
   color: #fe5453;
 }
-/* line 105, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .menuPage .typeLi .typeTitle {
   background: transparent;
   min-height: 50px;
@@ -1034,20 +996,20 @@ body {
   text-align: center;
   line-height: 50px;
 }
-/* line 113, ../sass/index.scss */
+/* line 112, ../sass/index.scss */
 .menuPage .typeLi .typeTitle:hover {
   cursor: pointer;
   background: rgba(0, 48, 112, 0.5);
 }
-/* line 121, ../sass/index.scss */
+/* line 120, ../sass/index.scss */
 .menuPage .checkColor {
   background: #0f365f;
 }
-/* line 125, ../sass/index.scss */
+/* line 124, ../sass/index.scss */
 .menuPage .typeItem {
   display: none;
 }
-/* line 129, ../sass/index.scss */
+/* line 128, ../sass/index.scss */
 .menuPage .typeItem li {
   background: #081d33;
   color: #b0bfce;
@@ -1056,15 +1018,15 @@ body {
   text-align: center;
   font-size: 16px;
 }
-/* line 137, ../sass/index.scss */
+/* line 136, ../sass/index.scss */
 .menuPage .typeItem li:hover {
   cursor: pointer;
   background: #0f365f;
 }
 
-/* line 149, ../sass/index.scss */
+/* line 148, ../sass/index.scss */
 .center {
-  height: calc(100% - 90px);
+  height: calc(100% - 60px);
   width: calc(100% - 222px);
   min-width: calc(960px - 222px);
   background: transparent !important;
@@ -1075,7 +1037,7 @@ body {
   padding-top: 30px;
 }
 
-/* line 170, ../sass/index.scss */
+/* line 169, ../sass/index.scss */
 .nomalItem {
   display: inline-block;
   vertical-align: top;
@@ -1083,24 +1045,25 @@ body {
   position: relative;
 }
 
-/* line 180, ../sass/index.scss */
+/* line 179, ../sass/index.scss */
 .titleWord {
   width: auto;
   height: 30px;
   line-height: 30px;
   display: inline-block;
   vertical-align: top;
-  color: #666;
+  color: white;
   width: 80px;
   font-size: 16px;
 }
 
-/* line 191, ../sass/index.scss */
+/* line 190, ../sass/index.scss */
 .selectItem {
   display: inline-block;
   vertical-align: top;
   width: 150px;
   position: relative;
+  color: white;
 }
 /* line 198, ../sass/index.scss */
 .selectItem .selectValue {
@@ -1110,12 +1073,11 @@ body {
   border: solid 1px #bfbfbf;
   border-radius: 3px;
   font-size: 14px;
-  color: #333;
   line-height: 30px;
   padding-left: 5px;
   cursor: pointer;
 }
-/* line 211, ../sass/index.scss */
+/* line 210, ../sass/index.scss */
 .selectItem .setSelect {
   width: 100%;
   max-height: 300px;
@@ -1127,7 +1089,7 @@ body {
   z-index: 5;
   background: white;
 }
-/* line 222, ../sass/index.scss */
+/* line 221, ../sass/index.scss */
 .selectItem .setSelect li {
   width: 100%;
   height: 30px;
@@ -1139,28 +1101,28 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-/* line 233, ../sass/index.scss */
+/* line 232, ../sass/index.scss */
 .selectItem .setSelect li:hover {
   background-color: #ebf0fb;
 }
-/* line 238, ../sass/index.scss */
+/* line 237, ../sass/index.scss */
 .selectItem .setSelect li:last-child {
   border-bottom: none;
 }
 
-/* line 250, ../sass/index.scss */
+/* line 249, ../sass/index.scss */
 .carSelectItemAdd {
   margin-left: 276px;
 }
 
-/* line 254, ../sass/index.scss */
+/* line 253, ../sass/index.scss */
 .carSelectItem {
   width: 200px;
   position: relative;
   display: inline-block;
   vertical-align: top;
 }
-/* line 261, ../sass/index.scss */
+/* line 259, ../sass/index.scss */
 .carSelectItem .carSelectVal {
   width: 200px;
   height: 30px;
@@ -1168,13 +1130,13 @@ body {
   border: solid 1px #bfbfbf;
   border-radius: 3px;
   font-size: 14px;
-  color: #333;
+  color: white;
   line-height: 30px;
   padding-left: 5px;
   cursor: pointer;
 }
 
-/* line 276, ../sass/index.scss */
+/* line 274, ../sass/index.scss */
 .checkIndex {
   height: auto;
   width: 28px;
@@ -1185,7 +1147,7 @@ body {
   vertical-align: top;
   float: left;
 }
-/* line 288, ../sass/index.scss */
+/* line 286, ../sass/index.scss */
 .checkIndex li {
   width: 28px;
   height: 20px;
@@ -1195,13 +1157,13 @@ body {
   line-height: 20px;
   font-size: 16px;
 }
-/* line 298, ../sass/index.scss */
+/* line 296, ../sass/index.scss */
 .checkIndex li:hover {
   cursor: pointer;
   background: #386ed3;
 }
 
-/* line 307, ../sass/index.scss */
+/* line 305, ../sass/index.scss */
 .carSelect {
   position: absolute;
   top: 35px;
@@ -1211,12 +1173,12 @@ body {
   z-index: 5;
 }
 
-/* line 318, ../sass/index.scss */
+/* line 316, ../sass/index.scss */
 .listJump::-webkit-scrollbar {
   display: none;
 }
 
-/* line 323, ../sass/index.scss */
+/* line 321, ../sass/index.scss */
 .listJump {
   height: 100%;
   width: 150px;
@@ -1232,25 +1194,25 @@ body {
   cursor: pointer;
   float: left;
 }
-/* line 338, ../sass/index.scss */
+/* line 336, ../sass/index.scss */
 .listJump dt {
   color: #386ed3;
   background-color: #ebf0fb;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 344, ../sass/index.scss */
+/* line 342, ../sass/index.scss */
 .listJump dd {
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 347, ../sass/index.scss */
+/* line 345, ../sass/index.scss */
 .listJump dd:hover {
   background-color: #ebf0fb;
 }
-/* line 352, ../sass/index.scss */
+/* line 350, ../sass/index.scss */
 .listJump dd::last-child {
   border-bottom: none;
 }
-/* line 357, ../sass/index.scss */
+/* line 355, ../sass/index.scss */
 .listJump dt,
 .listJump dd {
   width: 100%;
@@ -1260,7 +1222,7 @@ body {
   vertical-align: top;
 }
 
-/* line 366, ../sass/index.scss */
+/* line 364, ../sass/index.scss */
 .listDes {
   height: auto;
   width: 150px;
@@ -1274,7 +1236,7 @@ body {
   border: 1px solid #e0e0e0;
   float: left;
 }
-/* line 382, ../sass/index.scss */
+/* line 380, ../sass/index.scss */
 .listDes .listDesUl li {
   width: 100%;
   height: 31px;
@@ -1283,23 +1245,23 @@ body {
   vertical-align: top;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 390, ../sass/index.scss */
+/* line 388, ../sass/index.scss */
 .listDes .listDesUl li:hover {
   background-color: #ebf0fb;
 }
-/* line 395, ../sass/index.scss */
+/* line 393, ../sass/index.scss */
 .listDes .listDesUl li::last-child {
   border-bottom: none;
 }
 
-/* line 404, ../sass/index.scss */
+/* line 402, ../sass/index.scss */
 .setMoreItem {
   width: 100%;
   display: block !important;
   margin-top: 10px;
 }
 
-/* line 412, ../sass/index.scss */
+/* line 410, ../sass/index.scss */
 .addMore,
 .delMore {
   width: auto;
@@ -1308,19 +1270,18 @@ body {
   font-size: 14px;
   color: white;
   line-height: 30px;
-  color: #666;
   display: inline-block;
   vertical-align: top;
   left: 29px;
   cursor: pointer;
 }
-/* line 425, ../sass/index.scss */
+/* line 422, ../sass/index.scss */
 .addMore:hover,
 .delMore:hover {
   color: #fe5453;
 }
 
-/* line 431, ../sass/index.scss */
+/* line 428, ../sass/index.scss */
 .search {
   width: auto;
   height: 30px;
@@ -1343,17 +1304,17 @@ body {
   color: white;
   margin-left: 12px;
 }
-/* line 454, ../sass/index.scss */
+/* line 451, ../sass/index.scss */
 .search:hover {
   background: #ea0301;
 }
 
-/* line 460, ../sass/index.scss */
+/* line 457, ../sass/index.scss */
 .dataValue {
   margin-top: 15px;
 }
 
-/* line 464, ../sass/index.scss */
+/* line 461, ../sass/index.scss */
 .setTime {
   width: 200px;
   height: 30px;
@@ -1370,7 +1331,7 @@ body {
   cursor: pointer;
 }
 
-/* line 480, ../sass/index.scss */
+/* line 477, ../sass/index.scss */
 .showData {
   width: 282px;
   font-size: 20px;
@@ -1381,7 +1342,7 @@ body {
   top: 50px;
 }
 
-/* line 498, ../sass/index.scss */
+/* line 495, ../sass/index.scss */
 .opop {
   width: calc(100% - 20px);
   margin-left: 10px;
@@ -1389,92 +1350,132 @@ body {
   height: 200px;
 }
 
-/* line 512, ../sass/index.scss */
+/* line 509, ../sass/index.scss */
 .chartsItem {
   width: 100%;
   border: 1px solid #0056b3;
-  background: url(../images/botBorder.png) no-repeat left bottom;
-  background-size: 100% 30px;
+  border-top: none;
   background-color: rgba(0, 111, 255, 0.12);
+  position: relative;
+}
+/* line 515, ../sass/index.scss */
+.chartsItem:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}
+/* line 526, ../sass/index.scss */
+.chartsItem:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
 }
 
-/* line 520, ../sass/index.scss */
+/* line 542, ../sass/index.scss */
 .nomalTitle {
   width: 100%;
   height: 30px;
-  color: #333;
   font-size: 14px;
   line-height: 30px;
   padding-left: 20px;
-  background: url(../images/topBorder.png) no-repeat left top;
-  background-size: 100% 30px;
+  border: 1px solid #0056b3;
+  border-bottom: none;
+  background-color: rgba(0, 111, 255, 0.12);
+  position: relative;
+}
+/* line 554, ../sass/index.scss */
+.nomalTitle:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 0;
+  background: transparent;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+/* line 565, ../sass/index.scss */
+.nomalTitle:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 0;
+  top: 0;
+  background: transparent;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
 }
 
-/* line 532, ../sass/index.scss */
+/* line 580, ../sass/index.scss */
 .nomalChart {
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
   padding: 10px;
   height: auto;
+  color: white;
 }
 
-/* line 549, ../sass/index.scss */
+/* line 598, ../sass/index.scss */
 .bMap {
   height: 450px !important;
 }
 
-/* line 553, ../sass/index.scss */
+/* line 602, ../sass/index.scss */
 .one {
   width: calc(100% - 20px);
   margin: 0 auto;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 559, ../sass/index.scss */
+/* line 608, ../sass/index.scss */
 .one .chartsItem {
-  height: 300px;
-}
-/* line 563, ../sass/index.scss */
-.one .nomalTitle {
-  background: url(../images/topBorder3.png) no-repeat left top !important;
-  background-size: 100% 30px !important;
-}
-/* line 568, ../sass/index.scss */
-.one .chartsItem {
-  background: url(../images/botBorder3.png) no-repeat left bottom !important;
-  background-size: 100% 30px !important;
+  height: 35vh;
 }
 
-/* line 574, ../sass/index.scss */
+/* line 623, ../sass/index.scss */
 .two {
   width: calc(100%/2 - 15px);
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 579, ../sass/index.scss */
+/* line 628, ../sass/index.scss */
 .two .chartsItem {
-  height: 200px;
+  height: 20vh;
 }
 
-/* line 585, ../sass/index.scss */
+/* line 634, ../sass/index.scss */
 .three {
   width: calc(100%/3 - 16px);
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 590, ../sass/index.scss */
+/* line 639, ../sass/index.scss */
 .three .chartsItem {
-  height: 150px;
+  height: 15vh;
 }
 
-/* line 598, ../sass/index.scss */
+/* line 647, ../sass/index.scss */
 .chinaCss {
   width: calc(100% - 20px);
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 602, ../sass/index.scss */
+/* line 651, ../sass/index.scss */
 .chinaCss .chartsItem {
   height: 500px;
 }

@@ -27,7 +27,7 @@
                         <div class="typeTitle openColor"><span class="fa fa-area-chart fa-lg"></span>销量</div>
                     </li>
                     <li class="typeLi hasInfo noOpen">
-                        <div class="typeTitle"><span class="fa fa-bar-chart fa-lg"></span>传播<div class="fa fa-toggle-up fa-lg upDown"></div></div>
+                        <div class="typeTitle"><span class="fa fa-bar-chart fa-lg"></span>传播<span class="fa fa-toggle-up fa-lg upDown"></span></div>
                         <ul class="typeItem">
                             <li class="showInfoLi" data-content='2'>传播总量</li>
                             <li class="showInfoLi" data-content='3'>传播形式</li>
@@ -106,7 +106,10 @@
 
 				          
 				          <div class="setInfo" id="setInfo" >
-                                <div id='main' class="nomalChart two" style="height:200px"></div>
+                                    <div class="nomalChart two">
+                                         <div class="nomalTitle">这个是标题</div>
+                                         <div class="chartsItem" id="main"></div>
+                                    </div>
 				          </div>   
 
 
@@ -123,6 +126,7 @@
 <script type="text/javascript" src="lib/bootstrap/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 <script type="text/javascript" src="lib/bootstrap/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
 <script type="text/javascript" src='lib/echarts/echarts4.js'></script>
+<script type="text/javascript" src='lib/echarts/walden.js'></script>
 <script type="text/javascript" src="lib/echarts/echarts-wordcloud.js"></script>
 <script type="text/javascript" src="lib/echarts/echarts-liquidfill.js"></script>
 <!-- js -->

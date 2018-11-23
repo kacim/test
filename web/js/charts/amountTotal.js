@@ -2,8 +2,7 @@
 function initTotalOp(){
 
     $('#setInfo').html('');
-    $('#setInfo').append(juicer(modelCreate.chart_Tpl, { className: 'opop', classId: 'opop' }));
-    createCharts('oppo','opop','fill');
+    createCharts('one','opop','fill');
     createCharts('one','ppp','lineB');
     createCharts('two','yyy','circle');
     createCharts('two','uuu');
