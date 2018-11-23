@@ -54,7 +54,8 @@ function Color(min) {
     this.r = colorValue(min);
     this.g = colorValue(min);
     this.b = colorValue(min);
-    this.style = createColorStyle(this.r, this.g, this.b);
+    //   this.style = createColorStyle(this.r, this.g, this.b);
+    this.style = createColorStyle(255, 255, 255);
 }
 
 function Dot(num) {
@@ -66,13 +67,13 @@ function Dot(num) {
 
     if (num % 2 != 0)
         this.radius = Math.random() * 2;
-    else if (num % 3 != 0)
+    else if (num % 3 != 0) {
         this.radius = Math.random() * 1.5;
-    else
+    } else
         this.radius = Math.random();
 
     this.color = new Color();
-    console.log(this);
+
 }
 
 Dot.prototype = {
@@ -90,10 +91,46 @@ function createDots() {
     }
 }
 
+var check = 0;
+var join = 0;
+
 function moveDots() {
+     
+    join++ 
     for (i = 0; i < dots.nb; i++) {
 
         var dot = dots.array[i];
+
+        if(i%2==0){
+             if(join - check > 5 ){
+                dot.color.style = "rgba(255,255,255,0.8)"
+             }
+
+             if(join - check > 10){
+                dot.color.style = "rgba(255,255,255,0.5)"
+             }
+
+             if(join - check > 15 ){
+                dot.color.style = "rgba(255,255,255,0.3)"
+             }
+
+              if(join - check > 20 ){
+                dot.color.style = "rgba(255,255,255,0.1)"
+             }
+
+              if(join - check > 25 ){
+                dot.color.style = "rgba(255,255,255,0.3)"
+             }
+
+             if(join - check > 30){
+                dot.color.style = "rgba(255,255,255,0.5)"
+             }
+
+             if(join - check > 35 ){
+                dot.color.style = "rgba(255,255,255,0.8)"
+                check = join
+             }
+        }
 
         if (dot.y < 0 || dot.y > canvas.height) {
             dot.vx = dot.vx;
@@ -104,6 +141,7 @@ function moveDots() {
         }
         dot.x += dot.vx;
         dot.y += dot.vy;
+
     }
 }
 
@@ -143,6 +181,7 @@ function animateDots() {
     requestAnimationFrame(animateDots);
 }
 
+
 $('canvas').on('mousemove', function(e) {
     mousePosition.x = e.pageX;
     mousePosition.y = e.pageY;
@@ -156,8 +195,3 @@ $('canvas').on('mouseleave', function(e) {
 createDots();
 requestAnimationFrame(animateDots);
 //背景动画结束
-
-
-
-
-
